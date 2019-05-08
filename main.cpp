@@ -16,35 +16,6 @@ using namespace std;
 
 
 
-int main()
-{
-	try
-	{
-		char  a[] = { '1','1','1','1','1','1','1','1','1','1','1' };
-		*((int *)a + 2) = '0';
-
-		for (int i = 0; i < 10; i++)
-		{
-
-			cout << "a" << i << ':' << a[i] << endl;
-
-		}
-
-	}
-	catch (const std::exception& ex)
-	{
-		ex.what();
-	}
-	catch (...)
-	{
-		cout << "error" << endl;
-	}
-
-}
-
-
-
-
 
 
 /*
